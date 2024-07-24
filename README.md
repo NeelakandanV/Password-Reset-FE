@@ -4,7 +4,7 @@
 
 ## URL - https://passwordresetflw.netlify.app/
 
-##Features:-
+## Features:-
 ### yup and Formik - For form validations<br/>
 ### Axios - To manage API calls<br/>
 ### React Bootstrap and Material Ui - For component stylings.<br/>
