@@ -78,7 +78,7 @@ function ForgotPassword() {
                     <Button type="submit" size="sm">Send Reset Link</Button>
                     <hr></hr>
                     <label>Already have an account! :{" "}</label>
-                    <Link to="/">Login!!</Link>
+                    <Link to="/">Login!!</Link><br/>
                     <label>Don't have an account yet? :{" "}</label>
                     <Link to="/Signup">Register here!!</Link>
                 </form>

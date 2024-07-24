@@ -6,7 +6,7 @@ import { Url } from '../App';
 import { TextField } from '@mui/material';
 import { Button } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 const UserSchemaValidation = yup.object({
     Password: yup.string().min(8,"!Password should be atleast 8 characters").required("!Password required"),
@@ -14,6 +14,8 @@ const UserSchemaValidation = yup.object({
 })
 
 function ResetPassword() {
+    const navigate = useNavigate();
+
     // Clearing session storage
     useEffect(()=>{
         sessionStorage.clear()
@@ -51,6 +53,7 @@ function ResetPassword() {
             })
             //console.log(verifyData)
             toast.success(verifyData.data.message)
+            navigate("/")
         }
         catch(err){
             //console.log(err)
